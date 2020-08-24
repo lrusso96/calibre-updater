@@ -1,5 +1,5 @@
 param(
-	[int32] $win = 64,
+	[int] $win = 64,
 	[switch] $i = $false,
 	[switch] $d = $false
 )
@@ -37,7 +37,7 @@ If (-Not $d){
 	}
 }
 
-Invoke-WebRequest https://calibre-ebook.com/dist/win64 -O calibre_installer.msi
+Invoke-WebRequest "https://calibre-ebook.com/dist/win$win" -O calibre_installer.msi
 
 If (-Not $i){
 	Write-Host "`nWould you like to install Calibre now? (Y/N): " -ForegroundColor Yellow -NoNewline
