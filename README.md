@@ -21,3 +21,5 @@ Then it starts the installation process, which needs to be manually completed by
 ### Parameters
 
 - **win**: 32/64. Specifies the version to install.
+
+**Note:** for sake of simplicity, I have included in the release assets an executable version that you can download and run.
